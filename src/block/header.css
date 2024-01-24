@@ -1,0 +1,14 @@
+.header-search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6B6B6B;
+}
+
+.header-search-form input {
+    font-size: 20px;
+    color: #6B6B6B;
+    padding: 10px 5px;
+}
