@@ -3,17 +3,26 @@
     opacity: 0;
     visibility: hidden;
 
-    position: fixed;
-    top: 80px;
+    position: absolute;
+    top: 90px;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 280px;
+    height: 60vh;
     overflow: auto;
-    padding: 20px 0 100px;
+    padding: 20px 30px 40px;
 }
 
 .mobile-menu.is-active {
     opacity: 1;
     visibility: visible;
     z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.mobile-menu ul li {
+    color: #22253C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 30px;
 }

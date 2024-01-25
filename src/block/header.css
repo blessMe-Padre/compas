@@ -8,7 +8,70 @@
 }
 
 .header-search-form input {
+    width: 100%;
+}
+
+.header-search-form input {
     font-size: 20px;
     color: #6B6B6B;
     padding: 10px 5px;
+}
+
+.header-nav {}
+
+.header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+}
+
+.header-nav li {
+    margin-left: 30px;
+}
+
+.header-nav li a {
+    color: #22253C;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav li a:hover {
+    color: #81B8F9;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+@media (max-width:1023px) {
+    .header-nav ul {
+        gap: 20px;
+    }
+
+    .header-nav li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:767px) {
+    .header-nav ul {
+        display: none;
+    }
+}
+
+.header-form-mobile-wrapper form {
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #22253C;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+@media (min-width:1023px) {
+    .header-form-mobile-wrapper form {
+        display: none;
+    }
 }
