@@ -17,9 +17,11 @@ module.exports = {
       'white': '#ffffff',
       'main-black': '#22253C',
       'blue': '#81B8F9',
+      'blue-2': '#4466B6',
       'dark-blue': '#22253C',
       'green': '#D1D618',
       'gray': '#6B6B6B',
+      'light-gray': '#C4C4C4',
     },
 
     container: {

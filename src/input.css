@@ -11,6 +11,7 @@
 @import './block/decor.css';
 @import './block/scrool-top.css';
 @import './block/header.css';
+@import './block/footer.css';
 
 /* Импорт TailWind */
 @tailwind base;
