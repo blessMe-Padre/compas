@@ -85,20 +85,27 @@
     overflow: hidden;
 }
 
-.important {
-    background-image: url('../src/img/pattern-3.png');
-    background-repeat: no-repeat;
-    background-position: right;
+.link {
+    transition: color 0.3s ease;
 }
 
-@media (max-width: 767px) {
-    .important {
-        background-image: none;
-    }
+.link:hover {
+    color: #81B8F9;
 }
 
-@media (max-width: 1023px) {
-    .hero-bg img {
-        display: none;
-    }
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #6B6B6B;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #143861;
+    border-radius: 9em;
+    /* box-shadow: inset 1px 1px 10px #f3faf7; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
 }

@@ -54,6 +54,11 @@
 @media (max-width: 1078px) {
     .footer__logo {
         grid-row: 1/1;
+        grid-column: 1/-1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .footer__section {
@@ -74,5 +79,26 @@
 
     .footer__wrapper {
         grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__wrapper {
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__section {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+    }
+
+    .footer__list a {
+        font-size: 12px;
+    }
+
+    .footer__policy {
+        grid-column: 1/-1;
+        text-align: center;
     }
 }
