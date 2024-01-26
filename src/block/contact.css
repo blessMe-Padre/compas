@@ -1,1 +1,33 @@
 .contact {}
+
+.contact__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contact__map {
+    background-image: url('../src/img/map-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.contact__map iframe {
+    height: 600px;
+}
+
+
+@media (max-width: 767px) {
+    .contact__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__map {
+        height: 410px;
+    }
+
+    .contact__map iframe {
+        height: 400px;
+    }
+
+}
