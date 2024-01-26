@@ -12,6 +12,9 @@
 @import './block/scrool-top.css';
 @import './block/header.css';
 @import './block/footer.css';
+@import './block/hero.css';
+@import './block/catalog.css';
+@import './block/contact.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -96,12 +99,12 @@
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: #6B6B6B;
+    background-color: #C4C4C4;
 }
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-    background-color: #143861;
+    background-color: #4466B6;
     border-radius: 9em;
     /* box-shadow: inset 1px 1px 10px #f3faf7; */
 }

@@ -1,21 +1,27 @@
 export const initSlider = () => {
 
-    // слайдер "Отзывы"
-    const feedback = document.querySelector('.feedback');
-    if (feedback) {
-        const feedback = new Swiper('.feedback', {
+    // слайдер "Новинки"
+    const newSlider = document.querySelector('.new-swiper');
+    if (newSlider) {
+        const slider1 = new Swiper('.new-swiper', {
             loop: true,
             spaceBetween: 30,
             breakpoints: {
-                374: {
+                320: {
                     slidesPerView: 1,
                     spaceBetween: 20,
                 },
-                767: {
+
+                340: {
                     slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+
+                767: {
+                    slidesPerView: 3,
                 },
                 1023: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 30,
                 },
             },
