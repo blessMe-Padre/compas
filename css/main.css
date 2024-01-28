@@ -1160,6 +1160,121 @@ button.swiper-pagination-bullet{
   }
 }
 
+/* sidebar */
+
+.menu>li {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.menu>li>a {
+  display: block;
+  position: relative;
+  font-weight: 600;
+}
+
+.menu>li>a::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 10px;
+  top: 8px;
+  right: 10px;
+  background-image: url('../src/img/arrow-up.svg');
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+.menu>li>a.is-active::before {
+  transform: rotate(180deg);
+}
+
+.menu>li {
+  z-index: 10;
+}
+
+.sub-menu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.sub-menu.is-active {
+  opacity: 1;
+}
+
+.sub-menu li {
+  padding: 5px 0;
+}
+
+.catalog__wrapper {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 30px;
+}
+
+.catalog__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.catalog-menu-button {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .catalog__wrapper {
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 220px;
+    padding: 16px 30px;
+    color: #ABABAB;
+    background-color: #F6F6F6;
+  }
+
+  .catalog-menu-button.is-active img {
+    transform: rotate(180deg);
+  }
+
+  .catalog-form__sidebar {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 10px 20px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .catalog-form__sidebar.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .catalog__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
 .contact {
 }
 
@@ -1912,6 +2027,11 @@ body {
   padding-right: 1.75rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1920,6 +2040,11 @@ body {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .py-8{
@@ -1954,6 +2079,11 @@ body {
   line-height: 1rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1983,6 +2113,11 @@ body {
 .text-gray{
   --tw-text-opacity: 1;
   color: rgb(107 107 107 / var(--tw-text-opacity));
+}
+
+.text-light-gray{
+  --tw-text-opacity: 1;
+  color: rgb(196 196 196 / var(--tw-text-opacity));
 }
 
 .text-white{
