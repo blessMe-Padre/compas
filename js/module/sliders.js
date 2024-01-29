@@ -1,5 +1,4 @@
 export const initSlider = () => {
-
     // слайдер "Новинки"
     const newSlider = document.querySelector('.new-swiper');
     if (newSlider) {

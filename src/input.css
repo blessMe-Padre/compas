@@ -15,6 +15,9 @@
 @import './block/hero.css';
 @import './block/catalog.css';
 @import './block/contact.css';
+@import './block/card.css';
+@import './block/popup.css';
+@import './block/form.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -59,10 +62,6 @@
 .header-call-button:hover {
     background-color: transparent;
     color: #262626;
-}
-
-.popup-link {
-    @apply block py-3 text-2xl font-bodyFont uppercase px-8 bg-green rounded-lg text-center border-solid border-green border-[2px] transition-all relative z-[1] hover:bg-transparent;
 }
 
 .nav-link {

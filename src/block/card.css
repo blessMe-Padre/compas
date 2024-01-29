@@ -1,0 +1,102 @@
+.card {
+    padding: 40px 0;
+}
+
+.card__wrapper {
+    display: grid;
+    grid-template-columns: 56% 40%;
+    gap: 30px;
+}
+
+.card__sliders {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 30px;
+    max-height: 548px;
+}
+
+.slider__thumb {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
+}
+
+.slider__slider {
+    grid-column: 2/3;
+}
+
+.slider__thumb .swiper-slide {
+    border: 1px solid #DEDEDE;
+}
+
+.slider__thumb .swiper-slide img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.slider__thumb .swiper-slide-thumb-active {
+    border: 2px solid #262626;
+}
+
+.slider__slider .swiper-slide img {
+    margin: 0 auto;
+}
+
+.card__descriptions-list {
+    margin-left: -17px;
+}
+
+.card__descriptions-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    margin-bottom: 12px;
+}
+
+.card__descriptions-list li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 8px;
+    border: 1px dashed #C4C4C4;
+}
+
+
+.card__descriptions-item {
+    padding: 5px 15px 3px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .card__descriptions-list {
+        margin-left: 0;
+    }
+
+    .card__wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card__descriptions-item {
+        font-size: 12px;
+        max-width: 160px;
+    }
+
+    .slider__thumb .swiper-slide img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .card__sliders {
+        gap: 10px;
+        max-height: 300px;
+    }
+}
