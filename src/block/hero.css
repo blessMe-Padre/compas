@@ -40,3 +40,9 @@
         padding: 20px 20px;
     }
 }
+
+.hero--about h2 {
+    line-height: 1.1;
+    max-width: clamp(240px, 62vw, 1267px);
+    font-size: clamp(20px, 5vw, 65px);
+}

@@ -1097,6 +1097,12 @@ button.swiper-pagination-bullet{
   }
 }
 
+.hero--about h2 {
+  line-height: 1.1;
+  max-width: clamp(240px, 62vw, 1267px);
+  font-size: clamp(20px, 5vw, 65px);
+}
+
 .catalog {
   padding: 80px 0;
 }
@@ -2367,6 +2373,11 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-blue{
+  --tw-text-opacity: 1;
+  color: rgb(129 184 249 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -2542,6 +2553,11 @@ body {
 
   .md\:justify-end{
     justify-content: flex-end;
+  }
+
+  .md\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .md\:pt-2{
