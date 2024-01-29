@@ -22,6 +22,7 @@ module.exports = {
       'green': '#D1D618',
       'gray': '#6B6B6B',
       'light-gray': '#C4C4C4',
+      'light-gray-2': '#f6f6f6',
     },
 
     container: {
