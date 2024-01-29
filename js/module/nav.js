@@ -9,7 +9,7 @@ export const initNav = () => {
         menuButton.addEventListener('click', e => {
             menuButton.classList.toggle('active');
             mobileMenu.classList.toggle('is-active');
-            body.classList.toggle('lock');
+            // body.classList.toggle('lock');
         });
     });
 
@@ -18,7 +18,7 @@ export const initNav = () => {
             evt.preventDefault();
             menuButton.classList.remove('active');
             mobileMenu.classList.remove('is-active');
-            body.classList.remove('lock');
+            // body.classList.remove('lock');
         });
     });
 }
