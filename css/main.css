@@ -95,6 +95,7 @@
 
 @media (max-width: 768px) {
   .btn-close-menu {
+    padding-right: 10px;
     width: 160px;
     height: 50px;
   }
@@ -2207,6 +2208,10 @@ body {
   justify-content: flex-start;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -2613,6 +2618,10 @@ body {
 
   .sm\:items-end{
     align-items: flex-end;
+  }
+
+  .sm\:justify-center{
+    justify-content: center;
   }
 
   .sm\:gap-2{

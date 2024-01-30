@@ -73,6 +73,7 @@
 
 @media (max-width: 768px) {
     .btn-close-menu {
+        padding-right: 10px;
         width: 160px;
         height: 50px;
     }
